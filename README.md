@@ -72,3 +72,8 @@ java -DdebugOperations -cp /path/to/swagger-codegen-cli.jar:/path/to/your.jar io
 
 Will, for example, output the debug info for operations.  You can use this info
 in the `api.mustache` file.
+
+
+#### 备注 by james
+* 生成方法
+java -cp "D:/kscript/swagger/swagger-codegen-cli.jar;D:/kscript/kotlin-retrofit2-swagger-codegen/target/kotlin-retrofit2-swagger-codegen-1.0.0.jar" io.swagger.codegen.SwaggerCodegen generate   -l kotlin-retrofit2 -i https://xxx.ktpis.com/v2/api-docs  -o myClient
