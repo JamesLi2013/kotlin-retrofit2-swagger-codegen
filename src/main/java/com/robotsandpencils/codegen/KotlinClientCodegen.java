@@ -16,11 +16,11 @@ import java.util.*;
 public class KotlinClientCodegen extends DefaultCodegen implements CodegenConfig {
     static Logger LOGGER = LoggerFactory.getLogger(KotlinClientCodegen.class);
 
-    protected String groupId = "com.robotsandpencils";
-    protected String artifactId = "kotlin-retrofit2-client";
+    protected String groupId = "com.james";
+    protected String artifactId = "gate";
     protected String artifactVersion = "1.0.0";
-    protected String sourceFolder = "src/main/kotlin";
-    protected String packageName = "io.swagger.client";
+    protected String sourceFolder = "src/main";
+    protected String packageName = "com.james.gate";
     protected String apiDocPath = "docs/";
     protected String modelDocPath = "docs/";
 
@@ -124,7 +124,8 @@ public class KotlinClientCodegen extends DefaultCodegen implements CodegenConfig
         typeMapping.put("float", "Float");
         typeMapping.put("long", "Long");
         typeMapping.put("double", "Double");
-        typeMapping.put("number", "java.math.BigDecimal");
+//        typeMapping.put("number", "java.math.BigDecimal");
+        typeMapping.put("number", "Double");//lqx 修改为double
         typeMapping.put("date-time", "String");
         typeMapping.put("date", "String");
         typeMapping.put("file", "java.io.File");
