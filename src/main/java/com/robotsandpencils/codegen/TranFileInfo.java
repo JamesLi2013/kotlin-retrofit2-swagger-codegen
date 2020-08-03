@@ -75,6 +75,9 @@ public class TranFileInfo {
 //                    BufferedWriter bw = new BufferedWriter(new FileWriter(new File(apisPath, "test.kt")));
                     bw.write(sb.toString());
                     bw.close();
+                    bw = new BufferedWriter(new FileWriter(new File(apisPath, "ToTalApi.kt"),true));
+                    bw.write(sb.toString());
+                    bw.close();
 //                    return;//待删除
                 } catch (Exception e) {
                     e.printStackTrace();
